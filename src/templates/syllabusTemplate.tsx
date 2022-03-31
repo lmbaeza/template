@@ -61,20 +61,12 @@ const SectionContainer = styled.div`
 
 const HeroBGColor: { [key in SectionID]: string } = {
   general: 'bg-blue-700 dark:bg-blue-900',
-  bronze: 'bg-orange-800 dark:bg-orange-900',
-  silver: 'bg-teal-700 dark:bg-teal-900',
-  gold: 'bg-yellow-700 dark:bg-yellow-900',
-  plat: 'bg-purple-700 dark:bg-purple-900',
-  adv: 'bg-green-700 dark:bg-green-900',
+  silver: 'bg-teal-700 dark:bg-teal-900'
 };
 
 const HeroTextColor: { [key in SectionID]: string } = {
   general: 'text-teal-200',
-  bronze: 'text-orange-100',
-  silver: 'text-teal-100',
-  gold: 'text-yellow-100',
-  plat: 'text-purple-100',
-  adv: 'text-green-100',
+  silver: 'text-teal-100'
 };
 
 const topicsWarning = (
@@ -94,25 +86,7 @@ const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
       Feel free to mark some as "skipped" and revisit them at a later time!
     </>
   ),
-  bronze: topicsWarning,
-  silver: topicsWarning,
-  gold: topicsWarning,
-  plat: (
-    <>
-      {topicsWarning}
-      <br />
-      Some lower-frequency topics are included in "Advanced."
-    </>
-  ),
-  adv: (
-    <>
-      Some of these topics have not appeared in Platinum and probably never will
-      (ex. Matroid Intersection).
-      <br />
-      Others have appeared in Old Gold or Platinum very infrequently (ex. BCC,
-      Suffix Array).
-    </>
-  ),
+  silver: topicsWarning
 };
 
 export default function Template(props) {

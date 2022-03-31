@@ -99,17 +99,6 @@ export default function ActiveItems({
               </Link>
             </p>
           ))}
-          {/*<p>*/}
-          {/*  <a*/}
-          {/*    href="#"*/}
-          {/*    className="inline-flex items-center font-medium text-blue-600 hover:text-blue-500 transition ease-in-out duration-150"*/}
-          {/*  >*/}
-          {/*    Longest Common Subsequence*/}
-          {/*    <span className="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-gray-100 text-gray-800">*/}
-          {/*      Skipped*/}
-          {/*    </span>*/}
-          {/*  </a>*/}
-          {/*</p>*/}
         </div>
       </div>
     </DashboardCard>
