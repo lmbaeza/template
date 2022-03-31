@@ -15,10 +15,7 @@ export default function DesktopSidebar() {
         style={{ width: '20rem' }}
       >
         <div className="flex-grow h-0 flex flex-col pt-5">
-          <Link
-            className="flex items-center flex-shrink-0 px-4 pb-2"
-            to="/dashboard/"
-          >
+          <Link className="flex items-center flex-shrink-0 px-4 pb-2" to="/">
             <Logo />
           </Link>
           {/* Sidebar component, swap this element with another sidebar if you like */}

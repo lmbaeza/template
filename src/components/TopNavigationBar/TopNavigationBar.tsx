@@ -133,10 +133,7 @@ export default function TopNavigationBar({
         <div className="max-w-7xl px-2 sm:px-4 lg:px-8 mx-auto">
           <div className="flex justify-between h-16">
             <div className="flex px-2 lg:px-0">
-              <Link
-                to={linkLogoToIndex ? '/' : '/dashboard'}
-                className="flex-shrink-0 flex items-center"
-              >
+              <Link to={'/'} className="flex-shrink-0 flex items-center">
                 <div className="block sm:hidden">
                   <LogoSquare className="h-10 w-10" />
                 </div>

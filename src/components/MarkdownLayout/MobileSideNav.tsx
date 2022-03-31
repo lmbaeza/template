@@ -64,10 +64,7 @@ export default function MobileSideNav() {
                 </button>
               </div>
               <div className="flex-1 h-0 pt-5 flex flex-col">
-                <Link
-                  className="flex-shrink-0 flex items-center px-4"
-                  to="/dashboard/"
-                >
+                <Link className="flex-shrink-0 flex items-center px-4" to="/">
                   <Logo />
                 </Link>
                 <div className="px-4">
