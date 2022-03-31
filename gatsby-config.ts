@@ -5,11 +5,11 @@ const flags = {
 };
 
 const siteMetadata = {
-  title: `USACO Guide`,
+  title: `Computación Visual - UNAL 2022-I`,
   description: `A free collection of curated, high-quality competitive programming resources to take you from USACO Bronze to USACO Platinum and beyond. Written by top USACO Finalists, these tutorials will guide you through your competitive programming journey.`,
-  author: `@usacoguide`,
-  siteUrl: `https://usaco.guide/`,
-  keywords: ['USACO', 'Competitive Programming', 'USACO Guide'],
+  author: `@UNALOficial`,
+  siteUrl: `http://localhost:8000/`,
+  keywords: ['Computación Visual', 'Computing Vision'],
 };
 
 const plugins = [
@@ -102,8 +102,7 @@ const plugins = [
   {
     resolve: '@sentry/gatsby',
     options: {
-      dsn:
-        'https://2e28bddc353b46e7bead85347a099a04@o423042.ingest.sentry.io/5352677',
+      dsn: 'https://2e28bddc353b46e7bead85347a099a04@o423042.ingest.sentry.io/5352677',
       denyUrls: [/extensions\//i, /^chrome:\/\//i],
       ...(process.env.NODE_ENV === 'production'
         ? {}
