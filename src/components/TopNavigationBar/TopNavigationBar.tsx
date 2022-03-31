@@ -4,7 +4,6 @@ import {
   CogIcon,
   LoginIcon,
   LogoutIcon,
-  SearchIcon,
   UserGroupIcon,
 } from '@heroicons/react/solid';
 import classNames from 'classnames';
@@ -199,22 +198,6 @@ export default function TopNavigationBar({
                 </Popover.Group>
               </div>
             </div>
-            <div
-              className={`flex-1 flex items-center justify-end px-2 lg:px-0 lg:ml-6`}
-            >
-              <button
-                type="button"
-                className="inline-flex items-center px-2 py-1 border border-transparent rounded-md text-gray-500 hover:text-gray-700 dark:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-blue-500"
-                onClick={() => setIsSearchOpen(true)}
-              >
-                <SearchIcon
-                  className="h-5 w-5 text-gray-400 dark:text-gray-300"
-                  aria-hidden="true"
-                />
-
-                <span className="ml-2 font-medium">Search</span>
-              </button>
-            </div>
             <div className="flex items-center lg:hidden">
               {/* Mobile menu button */}
               <MobileMenuButtonContainer
@@ -268,14 +251,6 @@ export default function TopNavigationBar({
                 </div>
               ) : (
                 <>
-                  <button
-                    onClick={() => signIn()}
-                    className="relative inline-flex items-center px-2 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-gray-500 hover:text-gray-700 dark:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    Login
-                  </button>
-
-                  {/* Settings button */}
                   <Link
                     to="/settings"
                     className="p-1 border-2 border-transparent text-gray-400 dark:text-dark-med-emphasis rounded-full hover:text-gray-300 dark:hover:text-dark-high-emphasis focus:outline-none focus:text-gray-500 focus:bg-gray-100 dark:focus:bg-gray-700 transition"
