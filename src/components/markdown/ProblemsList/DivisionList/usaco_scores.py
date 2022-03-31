@@ -92,8 +92,8 @@ def usaco_stats():
     offset = [0, 1, 1, 1]
     # year = [15, 16, 17, 18, 19, 20] # 15,
     year = [21]
-    score_data = {"Bronze": {}, "Silver": {}, "Gold": {}, "Platinum": {}}
-    for division in ['bronze', 'silver', 'gold', 'platinum']:
+    score_data = {"Report": {},"Bronze": {}, "Silver": {}, "Gold": {}, "Platinum": {}}
+    for division in ['report', 'bronze', 'silver', 'gold', 'platinum']:
         for a in year:
             for j in range(len(month)):
                 url = prefix+str(month[j])+str(a+offset[j]) + \

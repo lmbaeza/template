@@ -57,6 +57,12 @@ export default function TopNavigationBar({
 
   const solutions = [
     {
+      name: 'Report',
+      href: '/report',
+      icon: BookmarkIcon,
+      key: 'report',
+    },
+    {
       name: 'General',
       href: '/general',
       icon: BookmarkIcon,

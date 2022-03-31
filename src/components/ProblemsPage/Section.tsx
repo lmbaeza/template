@@ -4,6 +4,7 @@ import SECTIONS from '../../../content/ordering';
 import { useDarkMode } from '../../context/DarkModeContext';
 
 const items = [
+  { label: 'Report', value: SECTIONS.report },
   { label: 'General', value: SECTIONS.general },
   { label: 'Bronze', value: SECTIONS.bronze },
   { label: 'Silver', value: SECTIONS.silver },
@@ -11,11 +12,12 @@ const items = [
   { label: 'Platinum', value: SECTIONS.plat },
   { label: 'Advanced', value: SECTIONS.adv },
 ];
+
 export default function Section({ refine }) {
   const darkMode = useDarkMode();
 
   const handleChange = e => {
-    let refinements = [];
+    const refinements = [];
     for (const section of e) {
       for (const chapter of section.value) {
         for (const module of chapter.items) {

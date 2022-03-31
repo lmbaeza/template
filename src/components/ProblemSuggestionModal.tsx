@@ -40,8 +40,9 @@ export default function ProblemSuggestionModal({
   const inEditor = editorActions.inEditor;
 
   // will be null if in editor
-  const markdownLayoutInfo = useContext(MarkdownLayoutContext)
-    ?.markdownLayoutInfo;
+  const markdownLayoutInfo = useContext(
+    MarkdownLayoutContext
+  )?.markdownLayoutInfo;
 
   const darkMode = useDarkMode();
 
@@ -137,6 +138,7 @@ export default function ProblemSuggestionModal({
       'Old Bronze': 'Old USACO Bronze (Before Dec 2015)',
       'Old Silver': 'Old USACO Silver (Before Dec 2015)',
       'Old Gold': 'Old USACO Gold (Before Dec 2015)',
+      Report: 'Informes',
       Bronze: 'Recent USACO Bronze (Dec 2015 and Later)',
       Silver: 'Recent USACO Silver (Dec 2015 and Later)',
       Gold: 'Recent USACO Gold (Dec 2015 and Later)',

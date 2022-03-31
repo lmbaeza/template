@@ -49,6 +49,7 @@ function replaceSearch(newSearch): string {
 const shouldLangParamApply = () => {
   const splitPath = window.location.pathname.split('/').filter(i => i);
   const posi = [
+    'report',
     'general',
     'bronze',
     'silver',

@@ -13,7 +13,7 @@ import idToSol from './id_to_sol';
 const lower = 2016;
 const upper = 2022;
 const ALL = `All (${lower - 1} - ${upper})`;
-const divisions = ['Bronze', 'Silver', 'Gold', 'Platinum'];
+const divisions = ['Report', 'Bronze', 'Silver', 'Gold', 'Platinum'];
 
 const getSeasons = () => {
   const res = [];
@@ -26,6 +26,7 @@ const getSeasons = () => {
 const seasons = getSeasons();
 
 const color: { [key: string]: string } = {
+  Report: 'bg-red-800',
   Bronze: 'bg-red-800',
   Silver: 'bg-gray-300',
   Gold: 'bg-yellow-300',
@@ -154,7 +155,9 @@ export function DivisionList(props): JSX.Element {
   const data = useStaticQuery(graphql`
     query {
       allProblemInfo(
-        filter: { source: { in: ["Bronze", "Silver", "Gold", "Plat"] } }
+        filter: {
+          source: { in: ["Report", "Bronze", "Silver", "Gold", "Plat"] }
+        }
       ) {
         edges {
           node {

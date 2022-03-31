@@ -60,6 +60,7 @@ const SectionContainer = styled.div`
 `;
 
 const HeroBGColor: { [key in SectionID]: string } = {
+  report: 'bg-blue-700 dark:bg-blue-900',
   general: 'bg-blue-700 dark:bg-blue-900',
   bronze: 'bg-orange-800 dark:bg-orange-900',
   silver: 'bg-teal-700 dark:bg-teal-900',
@@ -69,6 +70,7 @@ const HeroBGColor: { [key in SectionID]: string } = {
 };
 
 const HeroTextColor: { [key in SectionID]: string } = {
+  report: 'text-teal-200',
   general: 'text-teal-200',
   bronze: 'text-orange-100',
   silver: 'text-teal-100',
@@ -86,6 +88,7 @@ const topicsWarning = (
   </>
 );
 const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
+  report: topicsWarning,
   general: (
     <>
       You don't have to complete all the modules in this section before moving
@@ -234,7 +237,7 @@ export default function Template(props) {
                           item.frontmatter.frequency,
                           item.isIncomplete,
                           [],
-                          "None"
+                          'None'
                         )
                       }
                     />
@@ -249,7 +252,7 @@ export default function Template(props) {
   );
 }
 export const pageQuery = graphql`
-  query($division: String!) {
+  query ($division: String!) {
     modules: allXdm(
       filter: {
         fileAbsolutePath: { regex: "/content/" }

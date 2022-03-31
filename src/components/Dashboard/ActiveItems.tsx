@@ -56,6 +56,7 @@ export default function ActiveItems({
     const getLabel = x => {
       // put active USACO problems first
       const secs = [
+        'Report',
         'General',
         'Bronze',
         'Old Bronze',

@@ -95,7 +95,7 @@ def usaco_stats():
 
 cand = []
 edLinks = {}
-usaco_divisions = ['Bronze', 'Silver', 'Gold', 'Platinum']
+usaco_divisions = ['Report', 'Bronze', 'Silver', 'Gold', 'Platinum']
 id_to_prob = {x: [] for x in usaco_divisions}
 record = {x: [] for x in usaco_divisions}
 
