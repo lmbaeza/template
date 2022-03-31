@@ -30,38 +30,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       name: 'Contributing',
       description: 'How you can add content to the guide.',
       items: ['contributing', 'adding-solution', 'modules', 'working-mdx'],
-    },
-    {
-      name: 'General Resources',
-      description: 'Useful for competitors of all levels.',
-      items: [
-        'debugging-general',
-        'practicing',
-        'contest-strategy',
-        'resources-cp',
-        'contests',
-        'olympiads',
-      ],
-    },
-    {
-      name: 'Language-Specific',
-      description:
-        'Setup instructions and discussion of language-specific features.',
-      items: [
-        'running-code-locally',
-        'cpp-command',
-        'debugging-lang',
-        'fast-io',
-        'generic-code',
-        'lambda-funcs',
-      ],
-    },
-    {
-      name: 'USA',
-      description:
-        'Information specific to USACO as well as USA camps and contests.',
-      items: ['usaco-faq', 'usaco-monthlies', 'usaco-camp', 'resources-usa'],
-    },
+    }
   ],
   silver: [
     {
@@ -71,28 +40,7 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
     {
       name: 'Visual',
       items: ['visual'],
-    },
-    {
-      name: 'Sorting & Searching',
-      items: [
-        'sorting-custom',
-        'two-pointers',
-        'intro-sorted-sets',
-        'custom-cpp-stl',
-        'greedy-sorting',
-        'binary-search',
-      ],
-    },
-    {
-      name: 'Graphs',
-      description:
-        'Every (?) Silver - Plat contest has at least one graph problem.',
-      items: ['dfs', 'flood-fill', 'intro-tree', 'func-graphs'],
-    },
-    {
-      name: 'Conclusion',
-      items: ['silver-conclusion'],
-    },
+    }
   ]
 };
 
