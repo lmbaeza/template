@@ -18,8 +18,24 @@ export type Chapter = {
 const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
   report: [
     {
-      name: 'Visual Report',
-      items: ['visual-report'],
+      name: 'Autores',
+      items: ['autor-ojtinjacar', 'autor-lmbaeza'],
+    },
+    {
+      name: 'Show Case',
+      items: ['showcase-latex'],
+    },
+    {
+      name: 'LOGS',
+      items: ['logs-botacora'],
+    },
+    {
+      name: 'Referencias',
+      items: ['referencias-importantes'],
+    },
+    {
+      name: 'Informes',
+      items: ['informes-i'],
     },
   ],
   general: [
