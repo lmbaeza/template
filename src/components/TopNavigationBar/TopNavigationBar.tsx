@@ -19,7 +19,6 @@ import { LoadingSpinner } from '../elements/LoadingSpinner';
 import Logo from '../Logo';
 import LogoSquare from '../LogoSquare';
 import MobileMenuButtonContainer from '../MobileMenuButtonContainer';
-import SectionsDropdown from '../SectionsDropdown';
 import { SearchModal } from './SearchModal';
 import { UserAvatarMenu } from './UserAvatarMenu';
 
@@ -148,8 +147,6 @@ export default function TopNavigationBar({
                 </div>
               </Link>
               <div className={`hidden lg:ml-8 lg:flex space-x-8`}>
-                <SectionsDropdown currentSection={currentSection} />
-
                 <Popover.Group as="nav" className="h-full">
                   <Popover className="h-full">
                     {({ open }) => (

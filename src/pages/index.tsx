@@ -59,10 +59,10 @@ export default function IndexPage(): JSX.Element {
             <div className="flex md:justify-center">
               <GlowingRing>
                 <Link
-                  to="/dashboard"
+                  to="/report"
                   className={classNames(whiteButtonClassesBig, 'inline-block')}
                 >
-                  Get Started
+                  Ver Informes
                 </Link>
               </GlowingRing>
             </div>

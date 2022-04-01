@@ -7,7 +7,6 @@ import MODULE_ORDERING, {
 import MarkdownLayoutContext from '../../../context/MarkdownLayoutContext';
 import { ModuleLinkInfo } from '../../../models/module';
 import { SolutionInfo } from '../../../models/solution';
-import SectionsDropdown from '../../SectionsDropdown';
 import Accordion from './Accordion';
 import ItemLink from './ItemLink';
 
@@ -51,15 +50,8 @@ export const SidebarNav = () => {
 
   return (
     <nav className="flex-grow bg-white dark:bg-dark-surface flex flex-col h-0">
-      <div className="flex-shrink-0 border-b border-gray-200 dark:border-gray-800">
-        <div className="flex justify-center my-4">
-          <SectionsDropdown
-            currentSection={activeSection}
-            sidebarNav={true}
-            onSelect={s => setActiveSection(s)}
-          />
-        </div>
-      </div>
+      <br />
+      <br />
       <div className="flex-1 h-0 overflow-y-auto">
         {links.map(group => (
           <Accordion
